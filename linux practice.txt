@@ -1,0 +1,381 @@
+satyajit@DESKTOP-K8PJ84O:~$ whoami
+satyajit
+satyajit@DESKTOP-K8PJ84O:~$ hostname
+DESKTOP-K8PJ84O
+satyajit@DESKTOP-K8PJ84O:~$ hostname-i
+hostname-i: command not found
+satyajit@DESKTOP-K8PJ84O:~$ hostname -i
+127.0.1.1
+satyajit@DESKTOP-K8PJ84O:~$ whatis cp
+cp (1)               - copy files and directories
+satyajit@DESKTOP-K8PJ84O:~$ man cp
+satyajit@DESKTOP-K8PJ84O:~$ ls
+A_1
+satyajit@DESKTOP-K8PJ84O:~$ wc
+      0       0       0
+satyajit@DESKTOP-K8PJ84O:~$ wc A_1
+ 1  2 24 A_1
+satyajit@DESKTOP-K8PJ84O:~$ cat> A_2
+satyajit^C
+satyajit@DESKTOP-K8PJ84O:~$ cat A_2
+satyajitsatyajit@DESKTOP-K8PJ84O:~$ cat>A_2
+satyajithajare^C
+satyajit@DESKTOP-K8PJ84O:~$ cat A_2
+satyajit@DESKTOP-K8PJ84O:~$ cat>>A_2
+satyajit hajare
+ichalkaranji^C
+satyajit@DESKTOP-K8PJ84O:~$ cat A_2
+satyajit hajare
+satyajit@DESKTOP-K8PJ84O:~$ touch A_3
+satyajit@DESKTOP-K8PJ84O:~$ cat>>A_3
+digvijay navnale
+ichalkaranji^C
+satyajit@DESKTOP-K8PJ84O:~$ cat A_3
+digvijay navnale
+satyajit@DESKTOP-K8PJ84O:~$ cat>>A_3
+icahlkaranji
+kolhapur
+^C
+satyajit@DESKTOP-K8PJ84O:~$ cat A_3
+digvijay navnale
+icahlkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ cp A_2  A_3
+satyajit@DESKTOP-K8PJ84O:~$ A_3
+A_3: command not found
+satyajit@DESKTOP-K8PJ84O:~$ cat A_3
+satyajit hajare
+satyajit@DESKTOP-K8PJ84O:~$ cat A_2
+satyajit hajare
+satyajit@DESKTOP-K8PJ84O:~$ cat>>A_2
+ichalkaranji
+kolhapur
+^C
+satyajit@DESKTOP-K8PJ84O:~$ cat A_2
+satyajit hajare
+ichalkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ cat>A_4
+boys played well
+^C
+satyajit@DESKTOP-K8PJ84O:~$ car>A_5
+Command 'car' not found, but can be installed with:
+sudo apt install ucommon-utils
+satyajit@DESKTOP-K8PJ84O:~$ cat>A_5
+inshallah
+^C
+satyajit@DESKTOP-K8PJ84O:~$ mv A_5 A_4
+satyajit@DESKTOP-K8PJ84O:~$ cat A_4
+inshallah
+satyajit@DESKTOP-K8PJ84O:~$ cat>A_5
+hello
+^C
+satyajit@DESKTOP-K8PJ84O:~$ ls
+A_1  A_2  A_3  A_4  A_5
+satyajit@DESKTOP-K8PJ84O:~$ cat>A_6
+satyajit
+hajare
+ichalkaranji
+kolhapur
+digvijay
+navnale
+ichalkaranji
+kolhapur
+^C
+satyajit@DESKTOP-K8PJ84O:~$ head -8 A_6|tail-7
+tail-7: command not found
+satyajit@DESKTOP-K8PJ84O:~$ head -8 A_6 | tail -7
+hajare
+ichalkaranji
+kolhapur
+digvijay
+navnale
+ichalkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ haed 8
+Command 'haed' not found, did you mean:
+  command 'head' from deb coreutils (8.32-4.1ubuntu1)
+Try: sudo apt install <deb name>
+satyajit@DESKTOP-K8PJ84O:~$ head -8 A_6
+satyajit
+hajare
+ichalkaranji
+kolhapur
+digvijay
+navnale
+ichalkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ head -6 A_6
+satyajit
+hajare
+ichalkaranji
+kolhapur
+digvijay
+navnale
+satyajit@DESKTOP-K8PJ84O:~$ ls
+A_1  A_2  A_3  A_4  A_5  A_6
+satyajit@DESKTOP-K8PJ84O:~$ touch A_&
+[1] 167
+satyajit@DESKTOP-K8PJ84O:~$ touch A_9
+[1]+  Done                    touch A_
+satyajit@DESKTOP-K8PJ84O:~$ rm A_& A_9
+[1] 169
+A_9: command not found
+[1]+  Done                    rm A_
+satyajit@DESKTOP-K8PJ84O:~$ rm A_& A_9
+[1] 178
+rm: cannot remove 'A_': No such file or directory
+A_9: command not found
+[1]+  Exit 1                  rm A_
+satyajit@DESKTOP-K8PJ84O:~$ rm A_9
+satyajit@DESKTOP-K8PJ84O:~$ rm A_&
+[1] 188
+satyajit@DESKTOP-K8PJ84O:~$ rm: cannot remove 'A_': No such file or directory
+ls
+A_1  A_2  A_3  A_4  A_5  A_6
+[1]+  Exit 1                  rm A_
+satyajit@DESKTOP-K8PJ84O:~$ grep 'satyajit' A_2
+satyajit hajare
+satyajit@DESKTOP-K8PJ84O:~$ grep 'Satyajit' A_2
+satyajit@DESKTOP-K8PJ84O:~$ grep-i 'Satyajit' A_2
+grep-i: command not found
+satyajit@DESKTOP-K8PJ84O:~$ grep- i 'Satyajit' A_2
+Command 'grep-' not found, did you mean:
+  command 'grep' from deb grep (3.7-1build1)
+Try: sudo apt install <deb name>
+satyajit@DESKTOP-K8PJ84O:~$ grep -i 'Satyajit' A_2
+satyajit hajare
+satyajit@DESKTOP-K8PJ84O:~$ grep -i-n 'Satyajit' A_6
+grep: invalid option -- '-'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.
+satyajit@DESKTOP-K8PJ84O:~$ grep -i -n 'Satyajit' A_6
+1:satyajit
+satyajit@DESKTOP-K8PJ84O:~$ grep -i -c 'Satyajit' A_6
+1
+satyajit@DESKTOP-K8PJ84O:~$ grep -i 'Satyajit' A_6
+satyajit
+satyajit@DESKTOP-K8PJ84O:~$ grep -i  'Satyajit' A_6 && grep -i 'digvijay' A_6
+satyajit
+digvijay
+satyajit@DESKTOP-K8PJ84O:~$ grep -i -n  'Satyajit' A_6 && grep -i -n 'digvijay' A_6
+1:satyajit
+5:digvijay
+satyajit@DESKTOP-K8PJ84O:~$ gzip A_5
+-bash: /usr/bin/gzip: cannot execute binary file: Exec format error
+satyajit@DESKTOP-K8PJ84O:~$ gzip A_4
+-bash: /usr/bin/gzip: cannot execute binary file: Exec format error
+satyajit@DESKTOP-K8PJ84O:~$ cat>A_8
+46564
+54646
+84
+464
+^C
+satyajit@DESKTOP-K8PJ84O:~$ gzip A_*
+-bash: /usr/bin/gzip: cannot execute binary file: Exec format error
+satyajit@DESKTOP-K8PJ84O:~$ gzip A_8
+-bash: /usr/bin/gzip: cannot execute binary file: Exec format error
+satyajit@DESKTOP-K8PJ84O:~$ mkdir dir_1
+satyajit@DESKTOP-K8PJ84O:~$ ls
+A_1  A_2  A_3  A_4  A_5  A_6  A_8  dir_1
+satyajit@DESKTOP-K8PJ84O:~$ mkdir -p dir_1/satya/digu
+satyajit@DESKTOP-K8PJ84O:~$ ls
+A_1  A_2  A_3  A_4  A_5  A_6  A_8  dir_1
+satyajit@DESKTOP-K8PJ84O:~$ mkdir -p dir_2/satya/digu
+satyajit@DESKTOP-K8PJ84O:~$ ls
+A_1  A_2  A_3  A_4  A_5  A_6  A_8  dir_1  dir_2
+satyajit@DESKTOP-K8PJ84O:~$ cd dir_2
+satyajit@DESKTOP-K8PJ84O:~/dir_2$ touch dc
+satyajit@DESKTOP-K8PJ84O:~/dir_2$ ls
+dc  satya
+satyajit@DESKTOP-K8PJ84O:~/dir_2$ cd.
+Command 'cd.' not found, did you mean:
+  command 'cdi' from deb cdo (2.0.4-1)
+  command 'cdo' from deb cdo (2.0.4-1)
+  command 'cd5' from deb cd5 (0.1-4)
+  command 'cdp' from deb irpas (0.10-9)
+  command 'cdb' from deb tinycdb (0.78build3)
+  command 'cdw' from deb cdw (0.8.1-2)
+  command 'cde' from deb cde (0.1+git9-g551e54d-1.2)
+Try: sudo apt install <deb name>
+satyajit@DESKTOP-K8PJ84O:~/dir_2$ cd..
+cd..: command not found
+satyajit@DESKTOP-K8PJ84O:~/dir_2$ cd .
+satyajit@DESKTOP-K8PJ84O:~/dir_2$ cd ..
+satyajit@DESKTOP-K8PJ84O:~$ cd dir_2/satya/digu
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya/digu$ cd ..
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya$ cd..
+cd..: command not found
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya$ cd ..
+satyajit@DESKTOP-K8PJ84O:~/dir_2$ cd ..
+satyajit@DESKTOP-K8PJ84O:~$ pwd
+/home/satyajit
+satyajit@DESKTOP-K8PJ84O:~$ cd dir_2/satya/digu
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya/digu$ pwd
+/home/satyajit/dir_2/satya/digu
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya/digu$ rmdir digu
+rmdir: failed to remove 'digu': No such file or directory
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya/digu$ rmdir dir_2
+rmdir: failed to remove 'dir_2': No such file or directory
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya/digu$ ls
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya/digu$ cd ..
+satyajit@DESKTOP-K8PJ84O:~/dir_2/satya$ cd ..
+satyajit@DESKTOP-K8PJ84O:~/dir_2$ cd ..
+satyajit@DESKTOP-K8PJ84O:~$ rmdir digu
+rmdir: failed to remove 'digu': No such file or directory
+satyajit@DESKTOP-K8PJ84O:~$ rmdir dir_2
+rmdir: failed to remove 'dir_2': Directory not empty
+satyajit@DESKTOP-K8PJ84O:~$ mkdir hi
+satyajit@DESKTOP-K8PJ84O:~$ rmdir hi
+satyajit@DESKTOP-K8PJ84O:~$ rm -r dir_2
+satyajit@DESKTOP-K8PJ84O:~$
+
+satyajit@DESKTOP-K8PJ84O:~$ ls-l
+ls-l: command not found
+satyajit@DESKTOP-K8PJ84O:~$ ls
+A_1  A_2  A_3  A_4  A_5  A_6  A_8  dir_1
+satyajit@DESKTOP-K8PJ84O:~$ ls -l
+total 0
+-rw-r--r-- 1 satyajit satyajit   24 Oct 25 20:19 A_1
+-rw-r--r-- 1 satyajit satyajit   39 Nov  3 16:14 A_2
+-rw-r--r-- 1 satyajit satyajit   16 Nov  3 16:11 A_3
+-rw-r--r-- 1 satyajit satyajit   10 Nov  3 16:16 A_4
+-rw-r--r-- 1 satyajit satyajit    6 Nov  3 16:17 A_5
+-rw-r--r-- 1 satyajit satyajit   77 Nov  3 16:18 A_6
+-rw-r--r-- 1 satyajit satyajit   19 Nov  3 16:54 A_8
+drwxr-xr-x 1 satyajit satyajit 4096 Nov  3 16:58 dir_1
+satyajit@DESKTOP-K8PJ84O:~$ chmod u+x,g+w,o+w A_1
+satyajit@DESKTOP-K8PJ84O:~$ ls -l
+total 0
+-rwxrw-rw- 1 satyajit satyajit   24 Oct 25 20:19 A_1
+-rw-r--r-- 1 satyajit satyajit   39 Nov  3 16:14 A_2
+-rw-r--r-- 1 satyajit satyajit   16 Nov  3 16:11 A_3
+-rw-r--r-- 1 satyajit satyajit   10 Nov  3 16:16 A_4
+-rw-r--r-- 1 satyajit satyajit    6 Nov  3 16:17 A_5
+-rw-r--r-- 1 satyajit satyajit   77 Nov  3 16:18 A_6
+-rw-r--r-- 1 satyajit satyajit   19 Nov  3 16:54 A_8
+drwxr-xr-x 1 satyajit satyajit 4096 Nov  3 16:58 dir_1
+satyajit@DESKTOP-K8PJ84O:~$ chmod u-w,g+w,o+w A_2
+satyajit@DESKTOP-K8PJ84O:~$ ls -l
+total 0
+-rwxrw-rw- 1 satyajit satyajit   24 Oct 25 20:19 A_1
+-r--rw-rw- 1 satyajit satyajit   39 Nov  3 16:14 A_2
+-rw-r--r-- 1 satyajit satyajit   16 Nov  3 16:11 A_3
+-rw-r--r-- 1 satyajit satyajit   10 Nov  3 16:16 A_4
+-rw-r--r-- 1 satyajit satyajit    6 Nov  3 16:17 A_5
+-rw-r--r-- 1 satyajit satyajit   77 Nov  3 16:18 A_6
+-rw-r--r-- 1 satyajit satyajit   19 Nov  3 16:54 A_8
+drwxr-xr-x 1 satyajit satyajit 4096 Nov  3 16:58 dir_1
+satyajit@DESKTOP-K8PJ84O:~$ chmod u+w,g+w,o+w A_2
+satyajit@DESKTOP-K8PJ84O:~$ ls -l
+total 0
+-rwxrw-rw- 1 satyajit satyajit   24 Oct 25 20:19 A_1
+-rw-rw-rw- 1 satyajit satyajit   39 Nov  3 16:14 A_2
+-rw-r--r-- 1 satyajit satyajit   16 Nov  3 16:11 A_3
+-rw-r--r-- 1 satyajit satyajit   10 Nov  3 16:16 A_4
+-rw-r--r-- 1 satyajit satyajit    6 Nov  3 16:17 A_5
+-rw-r--r-- 1 satyajit satyajit   77 Nov  3 16:18 A_6
+-rw-r--r-- 1 satyajit satyajit   19 Nov  3 16:54 A_8
+drwxr-xr-x 1 satyajit satyajit 4096 Nov  3 16:58 dir_1
+satyajit@DESKTOP-K8PJ84O:~$ chmod u-w,g-w,o-w A_2
+satyajit@DESKTOP-K8PJ84O:~$ ls -l
+total 0
+-rwxrw-rw- 1 satyajit satyajit   24 Oct 25 20:19 A_1
+-r--r--r-- 1 satyajit satyajit   39 Nov  3 16:14 A_2
+-rw-r--r-- 1 satyajit satyajit   16 Nov  3 16:11 A_3
+-rw-r--r-- 1 satyajit satyajit   10 Nov  3 16:16 A_4
+-rw-r--r-- 1 satyajit satyajit    6 Nov  3 16:17 A_5
+-rw-r--r-- 1 satyajit satyajit   77 Nov  3 16:18 A_6
+-rw-r--r-- 1 satyajit satyajit   19 Nov  3 16:54 A_8
+drwxr-xr-x 1 satyajit satyajit 4096 Nov  3 16:58 dir_1
+satyajit@DESKTOP-K8PJ84O:~$ chmod 222 A_2
+satyajit@DESKTOP-K8PJ84O:~$ ls -l
+total 0
+-rwxrw-rw- 1 satyajit satyajit   24 Oct 25 20:19 A_1
+--w--w--w- 1 satyajit satyajit   39 Nov  3 16:14 A_2
+-rw-r--r-- 1 satyajit satyajit   16 Nov  3 16:11 A_3
+-rw-r--r-- 1 satyajit satyajit   10 Nov  3 16:16 A_4
+-rw-r--r-- 1 satyajit satyajit    6 Nov  3 16:17 A_5
+-rw-r--r-- 1 satyajit satyajit   77 Nov  3 16:18 A_6
+-rw-r--r-- 1 satyajit satyajit   19 Nov  3 16:54 A_8
+drwxr-xr-x 1 satyajit satyajit 4096 Nov  3 16:58 dir_1
+satyajit@DESKTOP-K8PJ84O:~$
+satyajit@DESKTOP-K8PJ84O:~$ ls
+A_1  A_2  A_3  A_4  A_5  A_6  A_8  dir_1
+satyajit@DESKTOP-K8PJ84O:~$ cat A_6
+satyajit
+hajare
+ichalkaranji
+kolhapur
+digvijay
+navnale
+ichalkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ sed -n '3p;4p;5p' A_6
+ichalkaranji
+kolhapur
+digvijay
+satyajit@DESKTOP-K8PJ84O:~$ sed -n '3,5p' A_6
+ichalkaranji
+kolhapur
+digvijay
+satyajit@DESKTOP-K8PJ84O:~$ sed '3,5d' A_6
+satyajit
+hajare
+navnale
+ichalkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ cat A_6
+satyajit
+hajare
+ichalkaranji
+kolhapur
+digvijay
+navnale
+ichalkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ sed -i '3,5d' A_6
+satyajit@DESKTOP-K8PJ84O:~$ cat A_6
+satyajit
+hajare
+navnale
+ichalkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ sed -i 's/navnale/digvijay/g' A_6
+satyajit@DESKTOP-K8PJ84O:~$ cat A_6
+satyajit
+hajare
+digvijay
+ichalkaranji
+kolhapur
+satyajit@DESKTOP-K8PJ84O:~$ cat>A_9
+satyajit kolhapur mech
+digvijay ichalkaranji entc
+prathmesh kabnoor mech
+omkar ganganagar aeronotics
+shrinivas delhi production
+^C
+satyajit@DESKTOP-K8PJ84O:~$ cat A_9
+satyajit kolhapur mech
+digvijay ichalkaranji entc
+prathmesh kabnoor mech
+omkar ganganagar aeronotics
+shrinivas delhi production
+satyajit@DESKTOP-K8PJ84O:~$ awk '{print $1}' A_9
+satyajit
+digvijay
+prathmesh
+omkar
+shrinivas
+satyajit@DESKTOP-K8PJ84O:~$ awk '{print $1,$3}' A_9
+satyajit mech
+digvijay entc
+prathmesh mech
+omkar aeronotics
+shrinivas production
+satyajit@DESKTOP-K8PJ84O:~$ awk 'NR>2 && NR<5' A_9
+prathmesh kabnoor mech
+omkar ganganagar aeronotics
+satyajit@DESKTOP-K8PJ84O:~$ vi A_9
+satyajit@DESKTOP-K8PJ84O:~$ vi A_9
+satyajit@DESKTOP-K8PJ84O:~$
